@@ -5,7 +5,7 @@ import requests
 from pprint import pprint
 from info import *
 
-token = 'ODQ0Nzg3OTI0NjAwMDk0NzQw.YKXgEA.YDJGF3Jds01tgTA1w0pFxOs3fJA'
+token = 'BOT_TOKEN'
 client = discord.Client()
 
 command_prefix = "!hackclub"
