@@ -1,10 +1,11 @@
+  
 import json
 import discord
 import requests
 from pprint import pprint
 from info import *
 
-token = 'BOT_TOKEN'
+token = 'ODQ0Nzg3OTI0NjAwMDk0NzQw.YKXgEA.YDJGF3Jds01tgTA1w0pFxOs3fJA'
 client = discord.Client()
 
 command_prefix = "!hackclub"
@@ -16,9 +17,16 @@ async def on_ready():
 @client.event
 async def on_message(message):
     if message.author != client.user and message.content.startswith(command_prefix):
-            url = 'https://hackathons.hackclub.com/api/events/upcoming'
+            url = 'https://hackathons.hackclub.com/api/events/upcoming' 
+            r = requests.get(url)
+            result = r.json()
+            result1 = {}
+            for d in result:
+                result1.update(d)
+                break
+            print(result1)
             try:
-                data = parse_data(json.loads(requests.get(url).content))
+                data = parse_data(result1)
                 await message.channel.send(embed = hack_message(data))
             except KeyError:
                 await message.channel.send(embed = error_message())
