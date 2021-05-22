@@ -1,4 +1,8 @@
-# Hacky-Discord-bot
+<p align="center">
+<img src="https://github.com/AM1CODES/Hacky-Discord-bot/blob/main/icon-square.png" alt="drawing" width="200"/>
+</p>
+
+# Hacky - The Hackclub Discord Bot
 The Hack Club is a community of hackers from across the globe. I's a super diverse community with people from high school, universities to even working professionals.
 Being a part of the Slack channel, i could see many bots but building bots for slack was not something that i was a fan of so i decided to build a Discord bot. Here's how it went.
 
