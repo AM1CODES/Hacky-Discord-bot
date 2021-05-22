@@ -2,7 +2,6 @@
 import json
 import discord
 import requests
-from pprint import pprint
 from info import *
 
 token = 'BOT_TOKEN'

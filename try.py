@@ -1,5 +1,4 @@
 import requests
-from collections import defaultdict
 
 r = requests.get('https://hackathons.hackclub.com/api/events/upcoming')
 result = r.json()
