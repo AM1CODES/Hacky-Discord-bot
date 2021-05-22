@@ -4,7 +4,7 @@ import discord
 import requests
 from info import *
 
-token = 'BOT_TOKEN'
+token = 'ODQ0Nzg3OTI0NjAwMDk0NzQw.YKXgEA.fwLM00MZVse-VrIh44ncAcOeqKw'
 client = discord.Client()
 
 command_prefix = "!hackclub"
